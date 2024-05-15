@@ -1,0 +1,26 @@
+{
+	"name": "webcompile",
+	"version": "0.1.301",
+	"main": "index.js",
+	"scripts": {
+		"test": "node example"
+	},
+	"keywords": [],
+	"author": "King Tensive/Hyperflame1296",
+	"license": "ISC",
+	"description": "A package that compiles a website's files into one HTML file",
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"html-minifier": "^4.0.0",
+		"path": "^0.12.7",
+		"prettier": "^3.2.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Hyperflame1296/WebCompile.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Hyperflame1296/WebCompile/issues"
+	},
+	"homepage": "https://github.com/Hyperflame1296/WebCompile#readme"
+}
