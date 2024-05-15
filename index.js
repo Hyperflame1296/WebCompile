@@ -12,7 +12,7 @@ function merge(ext, dir, skipFiles = [], sur, attr) {
         let filePath = path.join(dir, file);
         let cont = fs.readFileSync(filePath, 'utf8');
         if (typeof sur !== 'undefined') {
-            cont = `<${sur} ${attr || ''}>${cont}</${sur}>`
+            cont = `<${sur} id=${file} ${attr || ''}>${cont}</${sur}>`
             res.push(cont);
         } else {
             res.push(cont);
@@ -48,6 +48,15 @@ module.exports = function (options) {
                     ${mergedHTML}
 
                     ${mergedCSS}
+
+                    <script type=\"text/javascript\">
+                        console.log(\'%cWebCompile v0.1.3.01\', \`
+                            color: #fff;
+                            font: bold 20px monospace;
+                            background: linear-gradient(45deg, #19f, #f00, #0f0);
+                            text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+                        \`);
+                    </script>
 
                     ${mergedJSM}
 

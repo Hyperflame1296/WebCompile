@@ -1,6 +1,6 @@
 {
 	"name": "webcompile",
-	"version": "0.1.301",
+	"version": "0.1.302",
 	"main": "index.js",
 	"scripts": {
 		"test": "node example"
